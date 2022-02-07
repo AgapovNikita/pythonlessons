@@ -74,3 +74,22 @@
 # print(dict)
 
 #Задание 7
+# import json
+# file = open("task_7.txt", encoding='utf-8')
+# firma = file.read().split("\n")[:-1]
+# dict = {}
+# averege = {}
+# file = open("task_7.txt", encoding='utf-8')
+# for item in firma:
+#     key = item.split(" ")[0]
+#     a = [int(x) for x in file.readline().split() if x.isdigit()]
+#     value = a[0] - a[1]
+#     dict[key] = value
+#     if value > 0:
+#         averege[key] = value
+# value_aver = sum(averege.values()) / len(averege)
+# averege_prof = {'Averege profit is ': value_aver}
+# data = [dict] + [averege_prof]
+# print(data)
+# with open("task_7_json.json", "w") as write_f:
+#     json.dump(data, write_f)
