@@ -1,37 +1,36 @@
 #Задание 1
 # import time
 # class TrafficLight:
-#     _TrafficLight_color = 'Red'
+#     TrafficLight_color = ''
 #
-#     def edit_TrafficLight(self, _TrafficLight_color):
-#         self._TrafficLight_color = _TrafficLight_color
+#     def workihg(self, TrafficLight_color):
+#         self.TrafficLight_color = TrafficLight_color
 #
 # a = TrafficLight()
-# print(a._TrafficLight_color)
+# a.workihg('Red')
+# print(a.TrafficLight_color)
 # time.sleep(7)
-# a.edit_TrafficLight('Yellow')
-# print(a._TrafficLight_color)
+# a.workihg('Yellow')
+# print(a.TrafficLight_color)
 # time.sleep(2)
-# a.edit_TrafficLight('Green')
-# print(a._TrafficLight_color)
+# a.workihg('Green')
+# print(a.TrafficLight_color)
 # time.sleep(4)
 
 #Задание 2
 # class road:
-#     __road_length = 0
-#     __road_width = 0
-#     __road_thickness = 0
 #
-#     def edit_road(self, road_length, road_width, road_thickness):
-#         self.__road_length = road_length
-#         self.__road_width = road_width
-#         self.__road_thickness = road_thickness
-#         b = 20 * road_thickness * road_length * road_width
+#     def __init__(self, road_length, road_width, road_thickness):
+#         self.road_length = road_length
+#         self.road_width = road_width
+#         self.road_thickness = road_thickness
+#
+#     def road_massa(self):
+#         b = 25 * self.road_thickness * self.road_length * self.road_width
 #         print('Нужно ', b, 'кг')
 #
-# a = road()
-# a.edit_road(10, 10, 5)
-# a.edit_road(5, 5, 5)
+# a = road(10, 10 ,10)
+# a.road_massa()
 
 #Задание 3
 # class Worker:
@@ -105,3 +104,30 @@
 # print('\n' + c.go(), c.show_speed(), c.turn('направо'), c.stop())
 # d = PoliceCar('Kia', 60, 'white', True)
 # print('\n' + d.go(), d.show_speed(), d.turn('налево'), d.stop())
+
+#Задание 5
+# class Stationery:
+#     def __init__(self, title):
+#         self.title = title
+#
+#     def draw(self):
+#         return f'Запуск отрисовки'
+#
+# class Pen(Stationery):
+#     def draw(self):
+#         return f'Запуск отрисовки {self.title}'
+#
+# class Pencil(Stationery):
+#     def draw(self):
+#         return f'Запуск отрисовки {self.title}'
+#
+# class Handle(Stationery):
+#     def draw(self):
+#         return f'Запуск отрисовки {self.title}'
+#
+# a = Pen('ручкой')
+# print(a.draw())
+# b = Pencil('карандашем')
+# print(b.draw())
+# c = Handle('маркером')
+# print(c.draw())
