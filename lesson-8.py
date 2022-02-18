@@ -74,4 +74,56 @@
 # a = CheckNumber()
 # a.CheckValue()
 
-#Задание 4,5,6
+#Задание 4,5,
+# class OfficeTech:
+#
+#     def __init__(self, name, price, quantity):
+#         self.name = name
+#         self.price = price
+#         self.quantity = quantity
+#         self.items = {'Модель устройства: ': self.name, 'Цена: ': self.price, 'Количество: ': self.quantity}
+#
+#     def orgtech(self):
+#         try:
+#             name = input(f'Введите модель устройства: ')
+#             price = int(input(f'Введите цену: '))
+#             quantity = int(input(f'Введите количество: '))
+#             item = {'Модель устройства': name, 'Цена за ед': price, 'Количество': quantity}
+#             self.items.update(item)
+#             print(self.items)
+#         except ValueError:
+#             print('Недопустимое значение!')
+#
+#
+# class Printer(OfficeTech):
+#     pass
+#
+# class Scanner(OfficeTech):
+#     pass
+#
+# class Xerox(OfficeTech):
+#     pass
+#
+# p = Printer('Hp', 2, 300)
+# s = Scanner('Canon', 54000, 10)
+# x = Xerox('Xerox', 7000, 15)
+# p.orgtech()
+# s.orgtech()
+# x.orgtech()
+
+#Задание 7
+# class ComplexNumber:
+#     def __init__(self, a, b):
+#         self.a = a
+#         self.b = b
+#
+#     def __add__(self, other):
+#         return f'Сумма равна: {self.a + other.a} + {self.b + other.b} * i'
+#
+#     def __mul__(self, other):
+#         return f'Произведение равно: {self.a * other.a - (self.b * other.b)} + {(self.b * other.a)+(self.a * other.b)} * i'
+#
+# num_1 = ComplexNumber(5, 7)
+# num_2 = ComplexNumber(10, 5)
+# print(num_1 + num_2)
+# print(num_1 * num_2)
