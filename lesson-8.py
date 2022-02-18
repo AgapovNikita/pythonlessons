@@ -74,7 +74,7 @@
 # a = CheckNumber()
 # a.CheckValue()
 
-#Задание 4,5,
+#Задание 4,5,6
 # class OfficeTech:
 #
 #     def __init__(self, name, price, quantity):
